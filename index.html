@@ -1,11 +1,28 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Title of the document</title>
-</head>
 
-<body>
-The content of the document......
-</body>
+  <body>
+    Please enter Username and Password
+  </body>
+  <form>
+    <input type="text" placeholder="Username" id="text1" />
+    <br />
+    <input type="password" placeholder="Password" id="text2" />
+    <br />
+    <input type="button" value="Login" onclick="javascript:validate()" />
+  </form>
+  <script type="text/javascript">
+    function validate() {
+      if (document.getElementById("text1").value == "gavinj" && document.getElementById("text2").value == "1008997") {
+        location.href = "GUI.html";
+      } else {
+        alert("Username or Password wrong. Please try again.");
+     
+      }
+    }
+  </script>
+
+  
+  
 
 </html>
